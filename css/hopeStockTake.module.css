@@ -1,0 +1,121 @@
+.pageSection {
+    width: 100dvw;
+
+}
+
+.heroSection {
+    padding: .5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hopeFamilyLogo {
+    object-fit: contain;
+}
+
+.hopeFamilyName {
+    width: 90%;
+    text-align: center;
+}
+
+.formSection {
+    width: 100%;
+    min-height: 65svh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.stockForm {
+    width: 90%;
+}
+
+.activeFieldset {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    row-gap: 1rem;
+}
+
+.hide {
+    display: none;
+}
+
+.formQuestion {
+    margin: 0;
+    width: 100%;
+}
+
+.formInput {
+    background: #eeeeee;
+    width: 95%;
+    font-size: 1rem;
+    /* line-height: 1.5; */
+    padding: .2rem;
+    color: #000000;
+}
+
+.stockFormSelect {
+    width: 100%;
+    background: #eeeeee;
+    color: #000000;
+    padding: .3rem 0;
+    font-size: 1.05rem;
+}
+
+.stockRow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: .5rem  ;
+}
+
+.stockItem {
+    width: 100%;
+}
+
+.stockInput {
+    width: 45%;
+    padding: .2rem;
+    background: #eeeeee;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.stockUsed {
+    width: 29%;
+    padding: .2rem;
+    background: #eeeeee;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: .5rem 0;
+    margin: 2rem 0;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.message {
+    width: 90%;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+.introSection {
+    width: 100%;
+    background: var(--white);
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentBlock {
+    width: 90%;
+    padding: 0;
+}
+
+.pageHeading,
+.skillsTitle {
+    width: 90%;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.pageContent,
+.skillsInfo {
+    width: 90%;
+    font-size: 1rem;
+}

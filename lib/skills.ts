@@ -1,0 +1,15 @@
+export const skills = [
+    {
+        title: "Web Development",
+        info: `<p>I have a deep passion for coding — turning lines of code into something visual and interactive feels like painting with logic. What motivates me most is seeing the excitement on a client's face when their vision comes to life on-screen.</p><p>I've built websites ranging from business directories and eCommerce stores to holiday accommodation platforms and custom digital business cards. My experience spans:</p><ul><li>WordPress (including Elementor Pro)</li><li>Custom HTML, CSS, JavaScript</li><li>React and currently learning Next.js</li><li>ExpressionEngine CMS</li><li>Firebase, Google Sheets, Zapier integration</li><li>eCommerce with PayFast</li></ul><p>I started my journey in development through SEO, and that foundation still shapes how I build today — every site I create is optimized for search visibility and built mobile-first. Clean design, responsive layouts, and smart integrations are always at the core.</p>`
+    },{
+        title: "Digital Marketing",
+        info: `<p>With over 4 years of hands-on experience in Google Ads and 3 years in Meta Ads, I create and manage campaigns that drive real results. I've worked on Search, Display, and Performance Max campaigns, with Performance Max being my current favorite for its flexibility and reach.</p><p>I handle both strategy and execution — from understanding a brand's goals to crafting the campaign, monitoring the data, and optimizing for performance. My focus is always on improving traffic, conversions, and ROI. I'm currently exploring YouTube and LinkedIn advertising to expand my offering even further.</p>`
+    },{
+        title: "Social Media",
+        info: `<p>I’ve managed accounts across all major platforms, with a strong focus on Facebook. I handle everything from post planning and caption writing to design, scheduling, and community engagement.</p><p>I’m especially skilled in crafting high-engagement content, identifying trends, and building consistency through smart scheduling and timing. I use Meta Business Suite as my go-to tool for managing calendars and metrics.</p><p>While I often work independently, I love collaborating with clients on strategy — even when they prefer to hand it all over and let me take the lead.</p>`
+    },{
+        title: "Canva Design",
+        info: `<p>With 5+ years of Canva Pro experience, I’ve designed everything from social media graphics and brochures to logos and animated ads. Whether I’m working within existing brand guidelines or helping a business create a visual identity from scratch, I focus on clean, creative layouts that connect with their audience.</p><p>I’m known for quick turnarounds — especially when the client has a clear vision. And while I can work solo, I thrive in collaborative settings where ideas can bounce and evolve.</p>`
+    }
+]

@@ -1,0 +1,97 @@
+.heroSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.mainImage {
+    width: 90%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.contentBlock {
+    width: 90%;
+
+}
+
+.mainHeading {
+    font-size: 1.5rem;
+}
+
+.heroIntro {
+    font-size: 1rem;
+}
+
+.buttonRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttonLink {
+    width: 90%;
+    text-decoration: none;
+    padding: .5rem 0;
+    border: var(--lightTeal) solid 2px;
+    color: var(--lightTeal);
+    border-radius: 10px;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+@media (min-width: 400px) {
+    .heroSection {
+        padding: 2rem 0;
+    }
+    
+    .mainImage {
+        width: 70%;
+        aspect-ratio: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    .heroSection {
+        align-items: flex-start;
+    }
+    
+    .mainImage {
+        order: 2;
+        width: 35%;
+    }
+    
+    .contentBlock {
+        width: 50%;
+        order: 1;
+    }
+    
+    .buttonRow {
+        justify-content: flex-start;
+        padding: 1rem 0;
+    }
+    
+    .buttonLink {
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+    .mainImage {
+        width: 30%;
+    }
+    
+    .contentBlock {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mainImage {
+        width: 25%;
+    }
+}
