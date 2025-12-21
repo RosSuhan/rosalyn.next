@@ -111,10 +111,18 @@
     font-weight: 700;
 }
 
+.textArea {
+    width: 100%;
+    background: #eeeeee;
+    color: #000000;
+    padding: .2rem
+}
+
 .message {
     width: 90%;
     text-align: center;
 }
+
 
 .footer {
     text-align: center;

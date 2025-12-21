@@ -125,6 +125,7 @@ type FormData = {
     shTShirtReceived: string,
     shTShirtSold: string,
     shTShirtClosing: string,
+    comment: string,
 }
 
 export default function HopeFamilyStockTake(){
@@ -247,9 +248,10 @@ export default function HopeFamilyStockTake(){
         shTShirtReceived: "",
         shTShirtSold: "",
         shTShirtClosing: "",
+        comment: "",
     })
 
-    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbw6--LvOSo5SZlFZHbt1MtZILgTAZzNdkOmSb9wvq6A0bCLpWKOHtzo0OMjlfvbjF-g0w/exec'
+    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbxUsWGlJ2ZhkUD-lvcnohmBQ7ej4y_FGdT8VMV6gKnqwf8AllonZCGD4CU3I1Nhsahg-g/exec'
 
     async function handleSentForm (e:React.FormEvent) {
         e.preventDefault();
@@ -396,6 +398,7 @@ export default function HopeFamilyStockTake(){
             shTShirtReceived: "",
             shTShirtSold: "",
             shTShirtClosing: "",
+            comment: "",
         })
     }
 
@@ -954,6 +957,26 @@ export default function HopeFamilyStockTake(){
                                 />
                             </div>
 
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Comment
+                                </span>
+
+                                <textarea 
+                                    name="comment" 
+                                    id="comment"
+                                    placeholder='Comment'
+                                    onChange={handleOnChange}
+                                    value={formData.comment}
+                                    className={style.textArea}
+                                    rows={5}
+                                ></textarea>
+                            </div>
+
                             <button 
                                 type="submit"
                                 className={style.submitBtn}
@@ -1028,6 +1051,16 @@ export default function HopeFamilyStockTake(){
                                     className={style.stockInput}
                                 />
                             </div>
+
+                            <textarea 
+                                    name="comment" 
+                                    id="comment"
+                                    placeholder='Comment'
+                                    onChange={handleOnChange}
+                                    value={formData.comment}
+                                    className={style.textArea}
+                                    rows={5}
+                                ></textarea>
 
                             <button 
                                 type="submit"
@@ -1312,6 +1345,16 @@ export default function HopeFamilyStockTake(){
                                 />
                             </div>
 
+                            <textarea 
+                                    name="comment" 
+                                    id="comment"
+                                    placeholder='Comment'
+                                    onChange={handleOnChange}
+                                    value={formData.comment}
+                                    className={style.textArea}
+                                    rows={5}
+                                ></textarea>
+
                             <button 
                                 type="submit"
                                 className={style.submitBtn}
@@ -1531,6 +1574,7 @@ export default function HopeFamilyStockTake(){
                                     className={style.stockInput}
                                 />
                             </div>
+
                             <button 
                                 type="submit"
                                 className={style.submitBtn}
@@ -2043,6 +2087,16 @@ export default function HopeFamilyStockTake(){
                                     className={style.stockUsed}
                                 />
                             </div>
+
+                            <textarea 
+                                    name="comment" 
+                                    id="comment"
+                                    placeholder='Comment'
+                                    onChange={handleOnChange}
+                                    value={formData.comment}
+                                    className={style.textArea}
+                                    rows={5}
+                                ></textarea>
 
                             <button 
                                 type="submit"
