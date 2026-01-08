@@ -126,6 +126,15 @@ type FormData = {
     shTShirtSold: string,
     shTShirtClosing: string,
     comment: string,
+    standardAnimalReceived: string,
+    standardAnimalsSold: string,
+    standardAnimalClosing: string,
+    ornamentsReceived: string,
+    ornamentsSold: string,
+    ornamentsClosing: string,
+    babyAnimalReceived: string,
+    babyAnimalsSold: string,
+    babyAnimalClosing: string,
 }
 
 export default function HopeFamilyStockTake(){
@@ -134,6 +143,7 @@ export default function HopeFamilyStockTake(){
     const [ formData, setFormData ] = useState<FormData>({
         department: "",
         leader: "",
+        comment: "",        
         coffeeMade: "",
         decafMade: "",
         milkUsed: "",
@@ -248,10 +258,18 @@ export default function HopeFamilyStockTake(){
         shTShirtReceived: "",
         shTShirtSold: "",
         shTShirtClosing: "",
-        comment: "",
+        standardAnimalReceived: "",
+        standardAnimalsSold: "",
+        standardAnimalClosing: "",
+        ornamentsReceived: "",
+        ornamentsSold: "",
+        ornamentsClosing: "",
+        babyAnimalReceived: "",
+        babyAnimalsSold: "",
+        babyAnimalClosing: "",
     })
 
-    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbxUsWGlJ2ZhkUD-lvcnohmBQ7ej4y_FGdT8VMV6gKnqwf8AllonZCGD4CU3I1Nhsahg-g/exec'
+    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbzhOi8t9MX4y2DPiWBRGgkMGk63vuRnBomqUuNe5adMhEMmMYWQnxWTjgK5h7-weM0SGQ/exec'
 
     async function handleSentForm (e:React.FormEvent) {
         e.preventDefault();
@@ -399,6 +417,15 @@ export default function HopeFamilyStockTake(){
             shTShirtSold: "",
             shTShirtClosing: "",
             comment: "",
+            standardAnimalReceived: "",
+            standardAnimalsSold: "",
+            standardAnimalClosing: "",
+            ornamentsReceived: "",
+            ornamentsSold: "",
+            ornamentsClosing: "",
+            babyAnimalReceived: "",
+            babyAnimalsSold: "",
+            babyAnimalClosing: "",
         })
     }
 
@@ -1074,6 +1101,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='bottel330mlReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.bottel330mlReceived}
                                     onChange={handleOnChange}
@@ -1083,6 +1112,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='bottel330mlClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.bottel330mlClosingStock}
                                     onChange={handleOnChange}
@@ -1103,6 +1134,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='full250ml'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Full Bottels'
                                     value={formData.full250ml}
                                     onChange={handleOnChange}
@@ -1112,6 +1145,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='empty250ml'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Empty bottels'
                                     value={formData.empty250ml}
                                     onChange={handleOnChange}
@@ -1159,6 +1194,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='fullWelcomePacks'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Full Welcome Packs'
                                     value={formData.fullWelcomePacks}
                                     onChange={handleOnChange}
@@ -1168,6 +1205,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='welcomeFormReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Forms Received'
                                     value={formData.welcomeFormReceived}
                                     onChange={handleOnChange}
@@ -1177,6 +1216,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='welcomeFormClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Forms Closing'
                                     value={formData.welcomeFormClosingStock}
                                     onChange={handleOnChange}
@@ -1186,6 +1227,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='welcomeSleevesReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sleeves Received'
                                     value={formData.welcomeSleevesReceived}
                                     onChange={handleOnChange}
@@ -1195,6 +1238,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='welcomeSleevesClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sleeves Closing'
                                     value={formData.welcomeSleevesClosingStock}
                                     onChange={handleOnChange}
@@ -1204,6 +1249,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='pensReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Pens Received'
                                     value={formData.pensReceived}
                                     onChange={handleOnChange}
@@ -1213,6 +1260,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='pensClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Pens Closing'
                                     value={formData.pensClosingStock}
                                     onChange={handleOnChange}
@@ -1222,6 +1271,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='lolipopsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Lolipops Received'
                                     value={formData.lolipopsReceived}
                                     onChange={handleOnChange}
@@ -1231,6 +1282,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='lolipopsClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Lolipops Closing'
                                     value={formData.lolipopsClosingStock}
                                     onChange={handleOnChange}
@@ -1251,6 +1304,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='prayerRequestReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.prayerRequestReceived}
                                     onChange={handleOnChange}
@@ -1260,6 +1315,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='prayerRequestClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.prayerRequestClosingStock}
                                     onChange={handleOnChange}
@@ -1280,6 +1337,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='praiseReportReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.praiseReportReceived}
                                     onChange={handleOnChange}
@@ -1309,6 +1368,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='invitationReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.invitationReceived}
                                     onChange={handleOnChange}
@@ -1318,6 +1379,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='invitationClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.invitationClosingStock}
                                     onChange={handleOnChange}
@@ -1338,6 +1401,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='nextStepsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.nextStepsReceived}
                                     onChange={handleOnChange}
@@ -1347,6 +1412,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='nextStepsClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.nextStepsClosingStock}
                                     onChange={handleOnChange}
@@ -1367,6 +1434,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='givingReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.givingReceived}
                                     onChange={handleOnChange}
@@ -1376,6 +1445,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='givingClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.givingClosingStock}
                                     onChange={handleOnChange}
@@ -1396,6 +1467,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='destinyReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.destinyReceived}
                                     onChange={handleOnChange}
@@ -1405,6 +1478,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='destinyClosingStock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.destinyClosingStock}
                                     onChange={handleOnChange}
@@ -1467,6 +1542,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='welcomePackGiven'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='How many pack were given out?'
                                     value={formData.welcomePackGiven}
                                     onChange={handleOnChange}
@@ -1476,6 +1553,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='volunteersRightBlock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Volunteers Right Block'
                                     value={formData.volunteersRightBlock}
                                     onChange={handleOnChange}
@@ -1485,6 +1564,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='volunteersLeftBlock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Volunteers Left Block'
                                     value={formData.volunteersLeftBlock}
                                     onChange={handleOnChange}
@@ -1494,6 +1575,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='adultsRightBlock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Adults Right Block'
                                     value={formData.adultsRightBlock}
                                     onChange={handleOnChange}
@@ -1503,6 +1586,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='adultsLeftBlock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Adults Left Block'
                                     value={formData.adultsLeftBlock}
                                     onChange={handleOnChange}
@@ -1512,6 +1597,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='kidsRightBlock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Kids Right Block'
                                     value={formData.kidsRightBlock}
                                     onChange={handleOnChange}
@@ -1521,6 +1608,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='kidsLeftBlock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Kids Left Block'
                                     value={formData.kidsLeftBlock}
                                     onChange={handleOnChange}
@@ -1530,6 +1619,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='totsRightBlock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Tots Right Block'
                                     value={formData.totsRightBlock}
                                     onChange={handleOnChange}
@@ -1539,6 +1630,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='totsLeftBlock'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Tots Left Block'
                                     value={formData.totsLeftBlock}
                                     onChange={handleOnChange}
@@ -1559,6 +1652,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='parRoomAdult'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Parents'
                                     value={formData.parRoomAdult}
                                     onChange={handleOnChange}
@@ -1568,6 +1663,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='parRoomTots'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Tots'
                                     value={formData.parRoomTots}
                                     onChange={handleOnChange}
@@ -1577,6 +1674,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='parRoomBabies'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Babies'
                                     value={formData.parRoomBabies}
                                     onChange={handleOnChange}
@@ -1597,6 +1696,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='kidsVolunteers'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Volunteers'
                                     value={formData.kidsVolunteers}
                                     onChange={handleOnChange}
@@ -1606,6 +1707,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='kids'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Kids'
                                     value={formData.kids}
                                     onChange={handleOnChange}
@@ -1626,6 +1729,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='totsVolunteers'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Volunteers'
                                     value={formData.totsVolunteers}
                                     onChange={handleOnChange}
@@ -1635,6 +1740,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='tots'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Tots'
                                     value={formData.tots}
                                     onChange={handleOnChange}
@@ -1674,6 +1781,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedEaringsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.beadedEaringsReceived}
                                     onChange={handleOnChange}
@@ -1683,6 +1792,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedEaringsSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.beadedEaringsSold}
                                     onChange={handleOnChange}
@@ -1692,6 +1803,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedEaringsClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.beadedEaringsClosing}
                                     onChange={handleOnChange}
@@ -1712,6 +1825,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedBraceletsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.beadedBraceletsReceived}
                                     onChange={handleOnChange}
@@ -1721,6 +1836,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedBraceletsSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.beadedBraceletsSold}
                                     onChange={handleOnChange}
@@ -1730,6 +1847,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedBraceletsClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.beadedBraceletsClosing}
                                     onChange={handleOnChange}
@@ -1744,12 +1863,14 @@ export default function HopeFamilyStockTake(){
                                 <span
                                     className={style.stockItem}
                                 >
-                                    Beaded Bracelets
+                                    Woven Bracelets
                                 </span>
 
                                 <input 
                                     name='wovenBraceletsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.wovenBraceletsReceived}
                                     onChange={handleOnChange}
@@ -1759,6 +1880,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='wovenBraceletsSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.wovenBraceletsSold}
                                     onChange={handleOnChange}
@@ -1768,6 +1891,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='wovenBraceletsClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.wovenBraceletsClosing}
                                     onChange={handleOnChange}
@@ -1788,6 +1913,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='wristKeychainReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.wristKeychainReceived}
                                     onChange={handleOnChange}
@@ -1797,6 +1924,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='wristKeychainSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.wristKeychainSold}
                                     onChange={handleOnChange}
@@ -1806,6 +1935,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='wristKeychainClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.wristKeychainClosing}
                                     onChange={handleOnChange}
@@ -1826,6 +1957,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedNecklaceReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.beadedNecklaceReceived}
                                     onChange={handleOnChange}
@@ -1835,6 +1968,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedNecklaceSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.beadedNecklaceSold}
                                     onChange={handleOnChange}
@@ -1844,6 +1979,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedNecklaceClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.beadedNecklaceClosing}
                                     onChange={handleOnChange}
@@ -1864,6 +2001,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shortNeclaceReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.shortNeclaceReceived}
                                     onChange={handleOnChange}
@@ -1873,6 +2012,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shortNeclaceSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.shortNeclaceSold}
                                     onChange={handleOnChange}
@@ -1882,6 +2023,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shortNeclaceClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.shortNeclaceClosing}
                                     onChange={handleOnChange}
@@ -1902,6 +2045,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='sunglassChainsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.sunglassChainsReceived}
                                     onChange={handleOnChange}
@@ -1911,6 +2056,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='sunglassChainsSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.sunglassChainsSold}
                                     onChange={handleOnChange}
@@ -1920,6 +2067,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='sunglassChainsClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.sunglassChainsClosing}
                                     onChange={handleOnChange}
@@ -1940,6 +2089,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedKeyringsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.beadedKeyringsReceived}
                                     onChange={handleOnChange}
@@ -1949,6 +2100,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedKeyringsSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.beadedKeyringsSold}
                                     onChange={handleOnChange}
@@ -1958,6 +2111,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='beadedKeyringsClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.beadedKeyringsClosing}
                                     onChange={handleOnChange}
@@ -1978,6 +2133,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='sixStringBeadedKeyringsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.sixStringBeadedKeyringsReceived}
                                     onChange={handleOnChange}
@@ -1987,6 +2144,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='sixStringBeadedKeyringsSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.sixStringBeadedKeyringsSold}
                                     onChange={handleOnChange}
@@ -1996,6 +2155,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='sixStringBeadedKeyringsClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.sixStringBeadedKeyringsClosing}
                                     onChange={handleOnChange}
@@ -2016,6 +2177,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='scrunchiesReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.scrunchiesReceived}
                                     onChange={handleOnChange}
@@ -2025,6 +2188,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='scrunchiesSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.scrunchiesSold}
                                     onChange={handleOnChange}
@@ -2034,8 +2199,142 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='scrunchiesClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.scrunchiesClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+
+                            {/* Standard animals */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Standard Animals
+                                </span>
+
+                                <input 
+                                    name='standardAnimalReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.standardAnimalReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='standardAnimalsSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Sold'
+                                    value={formData.standardAnimalsSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='standardAnimalClosing'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.standardAnimalClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+
+                            {/* baby animals */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Baby Animals
+                                </span>
+
+                                <input 
+                                    name='babyAnimalReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.babyAnimalReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='babyAnimalsSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Sold'
+                                    value={formData.babyAnimalsSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='babyAnimalClosing'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.babyAnimalClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+
+                            {/* Ornaments */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Ornaments
+                                </span>
+
+                                <input 
+                                    name='ornamentsReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.ornamentsReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='ornamentsSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Sold'
+                                    value={formData.ornamentsSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='ornamentsClosing'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.ornamentsClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
                                 />
@@ -2054,6 +2353,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='bagsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.bagsReceived}
                                     onChange={handleOnChange}
@@ -2063,6 +2364,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='bagsSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.bagsSold}
                                     onChange={handleOnChange}
@@ -2072,6 +2375,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='bagsClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.bagsClosing}
                                     onChange={handleOnChange}
@@ -2092,6 +2397,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shDiyBraceletsReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.shDiyBraceletsReceived}
                                     onChange={handleOnChange}
@@ -2101,6 +2408,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shDiyBraceletsSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.shDiyBraceletsSold}
                                     onChange={handleOnChange}
@@ -2110,6 +2419,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shDiyBraceletsClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.shDiyBraceletsClosing}
                                     onChange={handleOnChange}
@@ -2130,6 +2441,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shTShirtReceived'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Received'
                                     value={formData.shTShirtReceived}
                                     onChange={handleOnChange}
@@ -2139,6 +2452,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shTShirtSold'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Sold'
                                     value={formData.shTShirtSold}
                                     onChange={handleOnChange}
@@ -2148,6 +2463,8 @@ export default function HopeFamilyStockTake(){
                                 <input 
                                     name='shTShirtClosing'
                                     type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.shTShirtClosing}
                                     onChange={handleOnChange}
@@ -2163,7 +2480,7 @@ export default function HopeFamilyStockTake(){
                                     value={formData.comment}
                                     className={style.textArea}
                                     rows={5}
-                                ></textarea>
+                            ></textarea>
 
                             <button 
                                 type="submit"
