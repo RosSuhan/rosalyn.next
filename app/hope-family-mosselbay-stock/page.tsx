@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-type Department = "" | "Coffee" | "Hope Art" | "Water" | "Welcome Desk" | "Attendance";
+type Department = "" | "Coffee" | "Hope Art" | "Water" | "Welcome Desk" | "Attendance" | "Merchandice";
 type ServiceSet = "" | "firstService" | "secondService"
 // type Department = "Coffee"
 
@@ -135,6 +135,102 @@ type FormData = {
     babyAnimalReceived: string,
     babyAnimalsSold: string,
     babyAnimalClosing: string,
+    baptismCertificate: string,
+    baptismCertStickers: string,
+    babyDedicationCert: string,
+    leadershipManuals: string,
+    discoveryBooklets: string,
+    lanPocketReceived: string,
+    lanPocketSold: string,
+    lanPocketClosing: string,
+    lanVolReceived: string,
+    lanVolSold: string,
+    lanVolClosing: string,
+    lanKidReceived: string,
+    lanKidSold: string,
+    lanKidClosing: string,
+    whShirtKidsReceived: string,
+    whShirtKidsSold: string,
+    whShirtKidsClosing: string,
+    whShirtXSReceived: string,
+    whShirtXSSold: string,
+    whShirtXSClosing: string,
+    whShirtSReceived: string,
+    whShirtSSold: string,
+    whShirtSClosing: string,
+    whShirtMReceived: string,
+    whShirtMSold: string,
+    whShirtMClosing: string,
+    whShirtLReceived: string,
+    whShirtLSold: string,
+    whShirtLClosing: string,
+    whShirtXLReceived: string,
+    whShirtXLSold: string,
+    whShirtXLClosing: string,
+    whShirt2XLReceived: string,
+    whShirt2XLSold: string,
+    whShirt2XLClosing: string,
+    whShirt3XLReceived: string,
+    whShirt3XLSold: string,
+    whShirt3XLClosing: string,
+    whShirt4XLReceived: string,
+    whShirt4XLSold: string,
+    whShirt4XLClosing: string,
+
+    // wbShirtKidsReceived: "",
+    // wbShirtKidsSold: "",
+    // wbShirtKidsClosing: "",
+    // wbShirtXSReceived: "",
+    // wbShirtXSSold: "",
+    // wbShirtXSClosing: "",
+    // wbShirtSReceived: "",
+    // wbShirtSSold: "",
+    // wbShirtSClosing: "",
+    // wbShirtMReceived: "",
+    // wbShirtMSold: "",
+    // wbShirtMClosing: "",
+    // wbShirtLReceived: "",
+    // wbShirtLSold: "",
+    // wbShirtLClosing: "",
+    // wbShirtXLReceived: "",
+    // wbShirtXLSold: "",
+    // wbShirtXLClosing: "",
+    // wbShirt2XLReceived: "",
+    // wbShirt2XLSold: "",
+    // wbShirt2XLClosing: "",
+    // wbShirt3XLReceived: "",
+    // wbShirt3XLSold: "",
+    // wbShirt3XLClosing: "",
+    // wbShirt4XLReceived: "",
+    // wbShirt4XLSold: "",
+    // wbShirt4XLClosing: "",
+    // serveShirtKidsReceived: "",
+    // serveShirtKidsSold: "",
+    // serveShirtKidsClosing: "",
+    // serveShirtXSReceived: "",
+    // serveShirtXSSold: "",
+    // serveShirtXSClosing: "",
+    // serveShirtSReceived: "",
+    // serveShirtSSold: "",
+    // serveShirtSClosing: "",
+    // serveShirtMReceived: "",
+    // serveShirtMSold: "",
+    // serveShirtMClosing: "",
+    // serveShirtLReceived: "",
+    // serveShirtLSold: "",
+    // serveShirtLClosing: "",
+    // serveShirtXLReceived: "",
+    // serveShirtXLSold: "",
+    // serveShirtXLClosing: "",
+    // serveShirt2XLReceived: "",
+    // serveShirt2XLSold: "",
+    // serveShirt2XLClosing: "",
+    // serveShirt3XLReceived: "",
+    // serveShirt3XLSold: "",
+    // serveShirt3XLClosing: "",
+    // serveShirt4XLReceived: "",
+    // serveShirt4XLSold: "",
+    // serveShirt4XLClosing: ""
 }
 
 export default function HopeFamilyStockTake(){
@@ -267,6 +363,101 @@ export default function HopeFamilyStockTake(){
         babyAnimalReceived: "",
         babyAnimalsSold: "",
         babyAnimalClosing: "",
+        baptismCertificate: "",
+        baptismCertStickers: "",
+        babyDedicationCert: "",
+        leadershipManuals: "",
+        discoveryBooklets: "",
+        lanPocketReceived: "",
+        lanPocketSold: "",
+        lanPocketClosing: "",
+        lanVolReceived: "",
+        lanVolSold: "",
+        lanVolClosing: "",
+        lanKidReceived: "",
+        lanKidSold: "",
+        lanKidClosing: "",
+        whShirtKidsReceived: "",
+        whShirtKidsSold: "",
+        whShirtKidsClosing: "",
+        whShirtXSReceived: "",
+        whShirtXSSold: "",
+        whShirtXSClosing: "",
+        whShirtSReceived: "",
+        whShirtSSold: "",
+        whShirtSClosing: "",        
+        whShirtMReceived: "",
+        whShirtMSold: "",
+        whShirtMClosing: "",        
+        whShirtLReceived: "",        
+        whShirtLSold: "",        
+        whShirtLClosing: "",        
+        whShirtXLReceived: "",        
+        whShirtXLSold: "",
+        whShirtXLClosing: "",        
+        whShirt2XLReceived: "",        
+        whShirt2XLSold: "",        
+        whShirt2XLClosing: "",        
+        whShirt3XLReceived: "",
+        whShirt3XLSold: "",        
+        whShirt3XLClosing: "",        
+        whShirt4XLReceived: "",        
+        whShirt4XLSold: "",        
+        whShirt4XLClosing: "",        
+        // wbShirtKidsReceived: "",        
+        // wbShirtKidsSold: "",        
+        // wbShirtKidsClosing: "",        
+        // wbShirtXSReceived: "",        
+        // wbShirtXSSold: "",        
+        // wbShirtXSClosing: "",        
+        // wbShirtSReceived: "",        
+        // wbShirtSSold: "",        
+        // wbShirtSClosing: "",        
+        // wbShirtMReceived: "",        
+        // wbShirtMSold: "",        
+        // wbShirtMClosing: "",        
+        // wbShirtLReceived: "",        
+        // wbShirtLSold: "",        
+        // wbShirtLClosing: "",        
+        // wbShirtXLReceived: "",        
+        // wbShirtXLSold: "",        
+        // wbShirtXLClosing: "",        
+        // wbShirt2XLReceived: "",        
+        // wbShirt2XLSold: "",        
+        // wbShirt2XLClosing: "",        
+        // wbShirt3XLReceived: "",        
+        // wbShirt3XLSold: "",        
+        // wbShirt3XLClosing: "",        
+        // wbShirt4XLReceived: "",        
+        // wbShirt4XLSold: "",        
+        // wbShirt4XLClosing: "",        
+        // serveShirtKidsReceived: "",        
+        // serveShirtKidsSold: "",        
+        // serveShirtKidsClosing: "",        
+        // serveShirtXSReceived: "",        
+        // serveShirtXSSold: "",        
+        // serveShirtXSClosing: "",        
+        // serveShirtSReceived: "",        
+        // serveShirtSSold: "",        
+        // serveShirtSClosing: "",        
+        // serveShirtMReceived: "",        
+        // serveShirtMSold: "",        
+        // serveShirtMClosing: "",        
+        // serveShirtLReceived: "",        
+        // serveShirtLSold: "",        
+        // serveShirtLClosing: "",        
+        // serveShirtXLReceived: "",        
+        // serveShirtXLSold: "",        
+        // serveShirtXLClosing: "",        
+        // serveShirt2XLReceived: "",        
+        // serveShirt2XLSold: "",        
+        // serveShirt2XLClosing: "",
+        // serveShirt3XLReceived: "",        
+        // serveShirt3XLSold: "",
+        // serveShirt3XLClosing: "",
+        // serveShirt4XLReceived: "",
+        // serveShirt4XLSold: "",
+        // serveShirt4XLClosing: ""
     })
 
     const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbzhOi8t9MX4y2DPiWBRGgkMGk63vuRnBomqUuNe5adMhEMmMYWQnxWTjgK5h7-weM0SGQ/exec'
@@ -426,6 +617,101 @@ export default function HopeFamilyStockTake(){
             babyAnimalReceived: "",
             babyAnimalsSold: "",
             babyAnimalClosing: "",
+            baptismCertificate: "",
+            baptismCertStickers: "",
+            babyDedicationCert: "",
+            leadershipManuals: "",
+            discoveryBooklets: "",
+            lanPocketReceived: "",
+            lanPocketSold: "",
+            lanPocketClosing: "",
+            lanVolReceived: "",
+            lanVolSold: "",
+            lanVolClosing: "",
+            lanKidReceived: "",
+            lanKidSold: "",
+            lanKidClosing: "",
+            whShirtKidsReceived: "",
+            whShirtKidsSold: "",
+            whShirtKidsClosing: "",
+            whShirtXSReceived: "",
+            whShirtXSSold: "",
+            whShirtXSClosing: "",
+            whShirtSReceived: "",
+            whShirtSSold: "",
+            whShirtSClosing: "",
+            whShirtMReceived: "",
+            whShirtMSold: "",
+            whShirtMClosing: "",
+            whShirtLReceived: "",
+            whShirtLSold: "",
+            whShirtLClosing: "",
+            whShirtXLReceived: "",
+            whShirtXLSold: "",
+            whShirtXLClosing: "",
+            whShirt2XLReceived: "",
+            whShirt2XLSold: "",
+            whShirt2XLClosing: "",
+            whShirt3XLReceived: "",
+            whShirt3XLSold: "",
+            whShirt3XLClosing: "",
+            whShirt4XLReceived: "",
+            whShirt4XLSold: "",
+            whShirt4XLClosing: "",
+            // wbShirtKidsReceived: "",
+            // wbShirtKidsSold: "",
+            // wbShirtKidsClosing: "",
+            // wbShirtXSReceived: "",
+            // wbShirtXSSold: "",
+            // wbShirtXSClosing: "",
+            // wbShirtSReceived: "",
+            // wbShirtSSold: "",
+            // wbShirtSClosing: "",
+            // wbShirtMReceived: "",
+            // wbShirtMSold: "",
+            // wbShirtMClosing: "",
+            // wbShirtLReceived: "",
+            // wbShirtLSold: "",
+            // wbShirtLClosing: "",
+            // wbShirtXLReceived: "",
+            // wbShirtXLSold: "",
+            // wbShirtXLClosing: "",
+            // wbShirt2XLReceived: "",
+            // wbShirt2XLSold: "",
+            // wbShirt2XLClosing: "",
+            // wbShirt3XLReceived: "",
+            // wbShirt3XLSold: "",
+            // wbShirt3XLClosing: "",
+            // wbShirt4XLReceived: "",
+            // wbShirt4XLSold: "",
+            // wbShirt4XLClosing: "",
+            // serveShirtKidsReceived: "",
+            // serveShirtKidsSold: "",
+            // serveShirtKidsClosing: "",
+            // serveShirtXSReceived: "",
+            // serveShirtXSSold: "",
+            // serveShirtXSClosing: "",
+            // serveShirtSReceived: "",
+            // serveShirtSSold: "",
+            // serveShirtSClosing: "",
+            // serveShirtMReceived: "",
+            // serveShirtMSold: "",
+            // serveShirtMClosing: "",
+            // serveShirtLReceived: "",
+            // serveShirtLSold: "",
+            // serveShirtLClosing: "",
+            // serveShirtXLReceived: "",
+            // serveShirtXLSold: "",
+            // serveShirtXLClosing: "",
+            // serveShirt2XLReceived: "",
+            // serveShirt2XLSold: "",
+            // serveShirt2XLClosing: "",
+            // serveShirt3XLReceived: "",
+            // serveShirt3XLSold: "",
+            // serveShirt3XLClosing: "",
+            // serveShirt4XLReceived: "",
+            // serveShirt4XLSold: "",
+            // serveShirt4XLClosing: ""
         })
     }
 
@@ -501,6 +787,7 @@ export default function HopeFamilyStockTake(){
                             <option value="Welcome Desk">Welcome Desk</option>
                             <option value="Hope Art">Hope Art</option>
                             <option value="Attendance">Attendance</option>
+                            <option value="Merchandice">Merchandice</option>
                         </select>
                     </fieldset>
 
@@ -1196,10 +1483,21 @@ export default function HopeFamilyStockTake(){
                                     type="text"
                                     inputMode='numeric'
                                     pattern='[0-9]*'
+                                    placeholder='How many filled in forms returned?'
+                                    value={formData.fullWelcomePacks}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='fullWelcomePacks'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
                                     placeholder='Full Welcome Packs'
                                     value={formData.fullWelcomePacks}
                                     onChange={handleOnChange}
-                                    className={style.formInput}
+                                    className={style.stockInput}
                                 />
 
                                 <input 
@@ -2481,6 +2779,902 @@ export default function HopeFamilyStockTake(){
                                     className={style.textArea}
                                     rows={5}
                             ></textarea>
+
+                            <button 
+                                type="submit"
+                                className={style.submitBtn}
+                            >
+                                {loading ? "Sending stock count" : "Submit"}
+                            </button>
+                        </fieldset>
+                    )}
+
+                    {formData.department === "Merchandice" && (
+                        <fieldset
+                            className={style.activeFieldset}
+                        >
+                            <h3>
+                                Merchandice
+                            </h3>
+
+                            {/* Certificates */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Certificates
+                                </span>
+
+                                <input 
+                                    name='baptismCertificate'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Baptism Certificate'
+                                    value={formData.baptismCertificate}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='baptismCertStickers'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Baptism Stickers'
+                                    value={formData.baptismCertStickers}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='babyDedicationCert'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Baby Dedication'
+                                    value={formData.babyDedicationCert}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+
+                            {/* Manuals and books */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Books and Manuals
+                                </span>
+
+                                <input 
+                                    name='leadershipManuals'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Leadership Manuals'
+                                    value={formData.leadershipManuals}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name="discoveryBooklets"
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Discovery Booklets'
+                                    value={formData.discoveryBooklets}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Lanyards */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Lanyards
+                                </span>
+                                
+                                <input 
+                                    name='lanPocketReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Pockets Received'
+                                    value={formData.lanPocketReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='lanPocketSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Pockets Sold'
+                                    value={formData.lanPocketSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='lanPocketClosing'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Pockets Closing'
+                                    value={formData.lanPocketClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='lanVolReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Volunteer Received'
+                                    value={formData.lanVolReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='lanVolSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Volunteer Sold'
+                                    value={formData.lanVolSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='lanVolClosing'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Volunteer Closing'
+                                    value={formData.lanVolClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='lanKidReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Kids Received'
+                                    value={formData.lanKidReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='lanKidSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Kids Sold'
+                                    value={formData.lanVolReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='lanKidClosing'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Kids Closing'
+                                    value={formData.lanKidClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+
+                            {/* Welcome Home Shirts */}
+                            {/* kids */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Welcome Home Shirts
+                                </span>
+
+                                <input 
+                                    name='whShirtKidsReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='9-10 Received'
+                                    value={formData.whShirtKidsReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtKidsSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='9-10 Sold'
+                                    value={formData.whShirtKidsSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtKidsClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='9-10 Closing'
+                                    value={formData.whShirtKidsClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+                            {/* XS */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <input 
+                                    name='whShirtXSReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='XS Received'
+                                    value={formData.whShirtXSReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtXSSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='XS Sold'
+                                    value={formData.whShirtXSSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtXSClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='XS Closing'
+                                    value={formData.whShirtXSClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+                            {/* S */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <input 
+                                    name='whShirtSReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Small Received'
+                                    value={formData.whShirtSReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtSSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Small Sold'
+                                    value={formData.whShirtSSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtSClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Small Closing'
+                                    value={formData.whShirtSClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+                            {/* M */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <input 
+                                    name='whShirtMReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Medium Received'
+                                    value={formData.whShirtMReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtMSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Medium Sold'
+                                    value={formData.whShirtMSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtMClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Medium Closing'
+                                    value={formData.whShirtMClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+                            {/* L */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <input 
+                                    name='whShirtLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Large Received'
+                                    value={formData.whShirtLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Large Sold'
+                                    value={formData.whShirtLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Large Closing'
+                                    value={formData.whShirtLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+                            {/* XL */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <input 
+                                    name='whShirtXLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='X-Large Received'
+                                    value={formData.whShirtXLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtXLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='X-Large Sold'
+                                    value={formData.whShirtXLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirtXLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='X-Large Closing'
+                                    value={formData.whShirtXLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+                            {/* 2XL */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <input 
+                                    name='whShirt2XLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='2X-Large Received'
+                                    value={formData.whShirt2XLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirt2XLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='2X-Large Sold'
+                                    value={formData.whShirt2XLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirt2XLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='2X-Large Closing'
+                                    value={formData.whShirt2XLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+                            {/* 3XL */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <input 
+                                    name='whShirt3XLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='3X-Large Received'
+                                    value={formData.whShirt3XLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirt3XLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='3X-Large Sold'
+                                    value={formData.whShirt3XLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirt3XLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='3X-Large Closing'
+                                    value={formData.whShirt3XLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+                            {/* 4XL */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <input 
+                                    name='whShirt4XLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='4X-Large Received'
+                                    value={formData.whShirt4XLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirt4XLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='4X-Large Sold'
+                                    value={formData.whShirt4XLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+
+                                <input 
+                                    name='whShirt4XLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='4X-Large Closing'
+                                    value={formData.whShirt4XLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                />
+                            </div>
+
+                            {/* Baptism Shirts */}
+                            {/* kids */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Baptism Shirts
+                                </span>
+
+                                {/* <input 
+                                    name='wbShirtKidsReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='9-10 Received'
+                                    value={formData.wbShirtKidsReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtKidsSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='9-10 Sold'
+                                    value={formData.wbShirtKidsSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtKidsClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='9-10 Closing'
+                                    value={formData.wbShirtKidsClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+                            {/* XS */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                {/* <input 
+                                    name='wbShirtXSReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='XS Received'
+                                    value={formData.wbShirtXSReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtXSSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='XS Sold'
+                                    value={formData.wbShirtXSSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtXSClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='XS Closing'
+                                    value={formData.wbShirtXSClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+                            {/* S */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                {/* <input 
+                                    name='wbShirtSReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Small Received'
+                                    value={formData.wbShirtSReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtSSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Small Sold'
+                                    value={formData.wbShirtSSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtSClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Small Closing'
+                                    value={formData.wbShirtSClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+                            {/* M */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                {/* <input 
+                                    name='wbShirtMReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Medium Received'
+                                    value={formData.wbShirtMReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtMSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Medium Sold'
+                                    value={formData.wbShirtMSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtMClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Medium Closing'
+                                    value={formData.wbShirtMClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+                            {/* L */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                {/* <input 
+                                    name='wbShirtLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Large Received'
+                                    value={formData.wbShirtLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Large Sold'
+                                    value={formData.wbShirtLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Large Closing'
+                                    value={formData.wbShirtLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+                            {/* XL */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                {/* <input 
+                                    name='wbShirtXLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='X-Large Received'
+                                    value={formData.wbShirtXLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtXLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='X-Large Sold'
+                                    value={formData.wbShirtXLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirtXLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='X-Large Closing'
+                                    value={formData.wbShirtXLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+                            {/* 2XL */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                {/* <input 
+                                    name='wbShirt2XLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='2X-Large Received'
+                                    value={formData.wbShirt2XLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirt2XLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='2X-Large Sold'
+                                    value={formData.wbShirt2XLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirt2XLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='2X-Large Closing'
+                                    value={formData.wbShirt2XLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+                            {/* 3XL */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                {/* <input 
+                                    name='wbShirt3XLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='3X-Large Received'
+                                    value={formData.wbShirt3XLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirt3XLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='3X-Large Sold'
+                                    value={formData.wbShirt3XLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirt3XLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='3X-Large Closing'
+                                    value={formData.wbShirt3XLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+                            {/* 4XL */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                {/* <input 
+                                    name='wbShirt4XLReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='4X-Large Received'
+                                    value={formData.wbShirt4XLReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirt4XLSold'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='4X-Large Sold'
+                                    value={formData.wbShirt4XLSold}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+
+                                {/* <input 
+                                    name='wbShirt4XLClosing'
+                                    type="text" 
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='4X-Large Closing'
+                                    value={formData.wbShirt4XLClosing}
+                                    onChange={handleOnChange}
+                                    className={style.stockUsed}
+                                /> */}
+                            </div>
+
+                            <textarea 
+                                    name="comment" 
+                                    id="comment"
+                                    placeholder='Comment'
+                                    onChange={handleOnChange}
+                                    value={formData.comment}
+                                    className={style.textArea}
+                                    rows={5}
+                                ></textarea>
 
                             <button 
                                 type="submit"
