@@ -468,15 +468,19 @@ export default function HopeFamilyStockTake(){
         e.preventDefault();
         setLoading(true);
 
+        const cleanedData = Object.fromEntries(
+            Object.entries(formData).filter(([_, value]) => value !== "")
+        );
+
         try {
             await fetch(SUBMIT_GOOGLE_FORM_URL, {
                 method: "POST",
                 mode: "no-cors",
                 headers: {"Content-Type": "application/json"},
-                body: JSON.stringify(formData)
+                body: JSON.stringify(cleanedData)
             })
 
-            console.log(formData);
+            console.log(cleanedData);
             setSubmitMessage("Thank you for taking stock and helping us excell in excellence.")
             setLoading(false)
 
