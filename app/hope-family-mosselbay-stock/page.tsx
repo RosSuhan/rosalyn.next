@@ -460,7 +460,7 @@ export default function HopeFamilyStockTake(){
         // serveShirt4XLClosing: ""
     })
 
-    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbx2bHDEWQLfEe7L0jFdh66BctHFHYOhWgmZF2rGPfFgWbKRKbAjCdFjiZWqu6jA7u4eYA/exec'
+    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbxzlxtzeWfdw4xHyyJ-6m2Lyhyefg77aIcNOP4GON7qlZ3yEOfdGS6qjzh4BKE5dT7MMg/exec'
 
     async function handleSentForm (e:React.FormEvent) {
         e.preventDefault();
