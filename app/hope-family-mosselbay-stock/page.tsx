@@ -135,6 +135,7 @@ type FormData = {
     babyAnimalReceived: string,
     babyAnimalsSold: string,
     babyAnimalClosing: string,
+    welcomePacksFormsReceived: string,
     baptismCertificate: string,
     baptismCertStickers: string,
     babyDedicationCert: string,
@@ -363,6 +364,7 @@ export default function HopeFamilyStockTake(){
         babyAnimalReceived: "",
         babyAnimalsSold: "",
         babyAnimalClosing: "",
+        welcomePacksFormsReceived: "",
         baptismCertificate: "",
         baptismCertStickers: "",
         babyDedicationCert: "",
@@ -460,7 +462,7 @@ export default function HopeFamilyStockTake(){
         // serveShirt4XLClosing: ""
     })
 
-    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbxzlxtzeWfdw4xHyyJ-6m2Lyhyefg77aIcNOP4GON7qlZ3yEOfdGS6qjzh4BKE5dT7MMg/exec'
+    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbwajo_n6PaIPCDTEapg2tuLSw99MDpx1CSshGFagT0eBagVe4fX_NASemxWT2Vz0vA2Ww/exec'
 
     async function handleSentForm (e:React.FormEvent) {
         e.preventDefault();
@@ -617,6 +619,7 @@ export default function HopeFamilyStockTake(){
             babyAnimalReceived: "",
             babyAnimalsSold: "",
             babyAnimalClosing: "",
+            welcomePacksFormsReceived: "",
             baptismCertificate: "",
             baptismCertStickers: "",
             babyDedicationCert: "",
@@ -1479,12 +1482,12 @@ export default function HopeFamilyStockTake(){
                                 </span>
                                 
                                 <input 
-                                    name='fullWelcomePacks'
+                                    name='welcomePacksFormsReceived'
                                     type="text"
                                     inputMode='numeric'
                                     pattern='[0-9]*'
                                     placeholder='How many filled in forms returned?'
-                                    value={formData.fullWelcomePacks}
+                                    value={formData.welcomePacksFormsReceived}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
