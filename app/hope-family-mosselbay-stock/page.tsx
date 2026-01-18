@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import Image from 'next/image'
 import React, { useState } from 'react'
 
-type Department = "" | "Coffee" | "Hope Art" | "Water" | "Welcome Desk" | "Attendance" | "Merchandice";
+type Department = "" | "Coffee" | "Hope Art" | "Water" | "Welcome Desk" | "Hope Kids" | "Attendance" | "Merchandice" | "General Cleaning";
 type ServiceSet = "" | "firstService" | "secondService"
 // type Department = "Coffee"
 
@@ -177,6 +177,32 @@ type FormData = {
     whShirt4XLReceived: string,
     whShirt4XLSold: string,
     whShirt4XLClosing: string,
+    whStickersReceived: string,
+    whStickersClosingStock: string,
+    hbStickersReceived: string, 
+    hbStickersClosingStock: string,
+    fjbookReceived: string,
+    fjbookClosingStock: string,
+    prprReceived: string,
+    prprClosingStock: string,
+    printReceived: string,
+    printClosingStock: string,
+    riceCakeReceived: string,
+    riceCakeClosingStock: string,
+    wetwipesReceived: string,
+    wetwipesClosingStock: string,
+    tissuesReceived: string,
+    tissuesClosingStock: string,
+    redBalloonReceived: string,
+    redBalloonClosingStock: string,
+    blueBalloonReceived: string,
+    blueBalloonClosingStock: string,
+    greenBalloonReceived: string,
+    greenBalloonClosingStock: string,
+    orangeBalloonReceived: string,
+    orangeBalloonClosingStock: string,
+    blackBagsReceived: string,
+    blackBagsClosingStock: string,
 }
 
 export default function HopeFamilyStockTake(){
@@ -350,7 +376,33 @@ export default function HopeFamilyStockTake(){
         whShirt3XLClosing: "",        
         whShirt4XLReceived: "",        
         whShirt4XLSold: "",        
-        whShirt4XLClosing: "",        
+        whShirt4XLClosing: "",    
+        whStickersReceived: "",
+        whStickersClosingStock: "",
+        hbStickersReceived: "", 
+        hbStickersClosingStock: "",
+        fjbookReceived: "",
+        fjbookClosingStock: "",
+        prprReceived: "",
+        prprClosingStock: "",
+        printReceived: "",
+        printClosingStock: "",
+        riceCakeReceived: "",
+        riceCakeClosingStock: "",
+        wetwipesReceived: "",
+        wetwipesClosingStock: "",
+        tissuesReceived: "",
+        tissuesClosingStock: "",
+        redBalloonReceived: "",
+        redBalloonClosingStock: "",
+        blueBalloonReceived: "",
+        blueBalloonClosingStock: "",
+        greenBalloonReceived: "",
+        greenBalloonClosingStock: "",
+        orangeBalloonReceived: "",
+        orangeBalloonClosingStock: "",   
+        blackBagsReceived: "",
+        blackBagsClosingStock: "", 
     })
 
     const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbxUbfnx1vSmcYTmg01L3Lv1-27oZpKsel1TJiH6HmasU9sbHehMVDj20UnljV5OF8FSbw/exec'
@@ -556,6 +608,32 @@ export default function HopeFamilyStockTake(){
             whShirt4XLReceived: "",
             whShirt4XLSold: "",
             whShirt4XLClosing: "",
+            whStickersReceived: "",
+            whStickersClosingStock: "",
+            hbStickersReceived: "", 
+            hbStickersClosingStock: "",
+            fjbookReceived: "",
+            fjbookClosingStock: "",
+            prprReceived: "",
+            prprClosingStock: "",
+            printReceived: "",
+            printClosingStock: "",
+            riceCakeReceived: "",
+            riceCakeClosingStock: "",
+            wetwipesReceived: "",
+            wetwipesClosingStock: "",
+            tissuesReceived: "",
+            tissuesClosingStock: "",
+            redBalloonReceived: "",
+            redBalloonClosingStock: "",
+            blueBalloonReceived: "",
+            blueBalloonClosingStock: "",
+            greenBalloonReceived: "",
+            greenBalloonClosingStock: "",
+            orangeBalloonReceived: "",
+            orangeBalloonClosingStock: "",
+            blackBagsReceived: "",
+            blackBagsClosingStock: "",
         })
     }
 
@@ -629,9 +707,11 @@ export default function HopeFamilyStockTake(){
                             <option value="Coffee">Coffee</option>
                             <option value="Water">Water</option>
                             <option value="Welcome Desk">Welcome Desk</option>
+                            <option value="Hope Kids">Hope Kids</option>
                             <option value="Hope Art">Hope Art</option>
                             <option value="Attendance">Attendance</option>
                             <option value="Merchandice">Merchandice</option>
+                            <option value="General Cleaning">General Cleaning Products</option>
                         </select>
                     </fieldset>
 
@@ -1211,6 +1291,453 @@ export default function HopeFamilyStockTake(){
                         </fieldset>
                     )}
 
+                    {formData.department === "General Cleaning" && (
+                        <fieldset
+                            className={style.activeFieldset}
+                        >
+                            <h3>General Cleaning Products</h3>
+
+                            {/* Black Bags */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Black bags
+                                </span>
+
+                                <input 
+                                    name='blackbagsReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.blackBagsReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='blackBagsClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.blackBagsClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            <textarea 
+                                    name="comment" 
+                                    id="comment"
+                                    placeholder='Comment'
+                                    onChange={handleOnChange}
+                                    value={formData.comment}
+                                    className={style.textArea}
+                                    rows={5}
+                                ></textarea>
+
+                            <button 
+                                type="submit"
+                                className={style.submitBtn}
+                            >
+                                {loading ? "Sending stock count" : "Submit"}
+                            </button>
+                        </fieldset>
+                    )}
+
+                    {formData.department === "Hope Kids" && (
+                        <fieldset
+                            className={style.activeFieldset}
+                        >
+                            <h3>
+                                Hope Kids
+                            </h3>
+
+                            {/* wh stickers */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Welcome Home Stickers
+                                </span>
+
+                                <input 
+                                    name='whStickersReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.whStickersReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='whStickersClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.whStickersClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* hb stickers */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Happy Birthday Stickers
+                                </span>
+
+                                <input 
+                                    name='hbStickersReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.hbStickersReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='hbStickersClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.hbStickersClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* follow Jesus booklet */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Follow Jesus Booklet with leaflet
+                                </span>
+
+                                <input 
+                                    name='fjbookReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.fjbookReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='fjbookClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.fjbookClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* prayer request / praise report */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Prayer Request / Praise Report
+                                </span>
+
+                                <input 
+                                    name='prprReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.prprReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='prprClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.prprClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* printer roll */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Printer Rolls
+                                </span>
+
+                                <input 
+                                    name='printReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.printReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='printClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.printClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Rice cakes */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Rice Cakes
+                                </span>
+
+                                <input 
+                                    name='riceCakeReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.riceCakeReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='riceCakeClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.riceCakeClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* wetwipes */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Wetwipes
+                                </span>
+
+                                <input 
+                                    name='wetwipesReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.wetwipesReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='wetwipesClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.wetwipesClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* tissues */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Tissues
+                                </span>
+
+                                <input 
+                                    name='tissuesReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.tissuesReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='tissuesClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.tissuesClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* balloons */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Balloons
+                                </span>
+
+                                <input 
+                                    name='redBalloonReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Red Balloons Received'
+                                    value={formData.redBalloonReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='redBalloonClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Red Balloons Closing'
+                                    value={formData.redBalloonClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='blueBalloonReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Blue Balloons Received'
+                                    value={formData.blueBalloonReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='blueBalloonClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Blue Balloons Closing'
+                                    value={formData.blueBalloonClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='greenBalloonReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Green Balloons Received'
+                                    value={formData.greenBalloonReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='greenBalloonClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Green Balloons Closing'
+                                    value={formData.greenBalloonClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='orangeBalloonReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Orange Balloons Received'
+                                    value={formData.orangeBalloonReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='orangeBalloonClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Orange Balloons Closing'
+                                    value={formData.orangeBalloonClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+                            <textarea 
+                                    name="comment" 
+                                    id="comment"
+                                    placeholder='Comment'
+                                    onChange={handleOnChange}
+                                    value={formData.comment}
+                                    className={style.textArea}
+                                    rows={5}
+                                ></textarea>
+
+                            <button 
+                                type="submit"
+                                className={style.submitBtn}
+                            >
+                                {loading ? "Sending stock count" : "Submit"}
+                            </button>
+                        </fieldset>
+                    )}
+
                     {formData.department === "Water" && (
                         <fieldset
                             className={style.activeFieldset}
@@ -1695,17 +2222,6 @@ export default function HopeFamilyStockTake(){
                                 />
 
                                 <input 
-                                    name='volunteersRightBlock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
-                                    placeholder='Volunteers Right Block'
-                                    value={formData.volunteersRightBlock}
-                                    onChange={handleOnChange}
-                                    className={style.stockInput}
-                                />
-
-                                <input 
                                     name='volunteersLeftBlock'
                                     type="text"
                                     inputMode='numeric'
@@ -1717,12 +2233,12 @@ export default function HopeFamilyStockTake(){
                                 />
 
                                 <input 
-                                    name='adultsRightBlock'
+                                    name='volunteersRightBlock'
                                     type="text"
                                     inputMode='numeric'
                                     pattern='[0-9]*'
-                                    placeholder='Adults Right Block'
-                                    value={formData.adultsRightBlock}
+                                    placeholder='Volunteers Right Block'
+                                    value={formData.volunteersRightBlock}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
@@ -1739,12 +2255,12 @@ export default function HopeFamilyStockTake(){
                                 />
 
                                 <input 
-                                    name='kidsRightBlock'
+                                    name='adultsRightBlock'
                                     type="text"
                                     inputMode='numeric'
                                     pattern='[0-9]*'
-                                    placeholder='Kids Right Block'
-                                    value={formData.kidsRightBlock}
+                                    placeholder='Adults Right Block'
+                                    value={formData.adultsRightBlock}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
@@ -1761,12 +2277,12 @@ export default function HopeFamilyStockTake(){
                                 />
 
                                 <input 
-                                    name='totsRightBlock'
+                                    name='kidsRightBlock'
                                     type="text"
                                     inputMode='numeric'
                                     pattern='[0-9]*'
-                                    placeholder='Tots Right Block'
-                                    value={formData.totsRightBlock}
+                                    placeholder='Kids Right Block'
+                                    value={formData.kidsRightBlock}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
@@ -1778,6 +2294,17 @@ export default function HopeFamilyStockTake(){
                                     pattern='[0-9]*'
                                     placeholder='Tots Left Block'
                                     value={formData.totsLeftBlock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='totsRightBlock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Tots Right Block'
+                                    value={formData.totsRightBlock}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
@@ -2829,8 +3356,6 @@ export default function HopeFamilyStockTake(){
                                     className={style.stockUsed}
                                 />
                             </div>
-
-                            
 
                             {/* Welcome Home Shirts */}
                             {/* kids */}
