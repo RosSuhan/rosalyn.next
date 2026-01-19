@@ -203,6 +203,33 @@ type FormData = {
     orangeBalloonClosingStock: string,
     blackBagsReceived: string,
     blackBagsClosingStock: string,
+    wbShirtKidsReceived: string,
+    wbShirtKidsSold: string,
+    wbShirtKidsClosing: string,
+    wbShirtXSReceived: string,
+    wbShirtXSSold: string,
+    wbShirtXSClosing: string,
+    wbShirtSReceived: string,
+    wbShirtSSold: string,
+    wbShirtSClosing: string,
+    wbShirtMReceived: string,
+    wbShirtMSold: string,
+    wbShirtMClosing: string,
+    wbShirtLReceived: string,
+    wbShirtLSold: string,
+    wbShirtLClosing: string,
+    wbShirtXLReceived: string,
+    wbShirtXLSold: string,
+    wbShirtXLClosing: string,
+    wbShirt2XLReceived: string,
+    wbShirt2XLSold: string,
+    wbShirt2XLClosing: string,
+    wbShirt3XLReceived: string,
+    wbShirt3XLSold: string,
+    wbShirt3XLClosing: string,
+    wbShirt4XLReceived: string,
+    wbShirt4XLSold: string,
+    wbShirt4XLClosing: string,
 }
 
 export default function HopeFamilyStockTake(){
@@ -403,6 +430,33 @@ export default function HopeFamilyStockTake(){
         orangeBalloonClosingStock: "",   
         blackBagsReceived: "",
         blackBagsClosingStock: "", 
+        wbShirtKidsReceived: "",
+        wbShirtKidsSold: "",
+        wbShirtKidsClosing: "",
+        wbShirtXSReceived: "",
+        wbShirtXSSold: "",
+        wbShirtXSClosing: "",
+        wbShirtSReceived: "",
+        wbShirtSSold: "",
+        wbShirtSClosing: "",
+        wbShirtMReceived: "",
+        wbShirtMSold: "",
+        wbShirtMClosing: "",
+        wbShirtLReceived: "",
+        wbShirtLSold: "",
+        wbShirtLClosing: "",
+        wbShirtXLReceived: "",
+        wbShirtXLSold: "",
+        wbShirtXLClosing: "",
+        wbShirt2XLReceived: "",
+        wbShirt2XLSold: "",
+        wbShirt2XLClosing: "",
+        wbShirt3XLReceived: "",
+        wbShirt3XLSold: "",
+        wbShirt3XLClosing: "",
+        wbShirt4XLReceived: "",
+        wbShirt4XLSold: "",
+        wbShirt4XLClosing: "",
     })
 
     const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbxUbfnx1vSmcYTmg01L3Lv1-27oZpKsel1TJiH6HmasU9sbHehMVDj20UnljV5OF8FSbw/exec'
@@ -634,6 +688,33 @@ export default function HopeFamilyStockTake(){
             orangeBalloonClosingStock: "",
             blackBagsReceived: "",
             blackBagsClosingStock: "",
+            wbShirtKidsReceived: "",
+            wbShirtKidsSold: "",
+            wbShirtKidsClosing: "",
+            wbShirtXSReceived: "",
+            wbShirtXSSold: "",
+            wbShirtXSClosing: "",
+            wbShirtSReceived: "",
+            wbShirtSSold: "",
+            wbShirtSClosing: "",
+            wbShirtMReceived: "",
+            wbShirtMSold: "",
+            wbShirtMClosing: "",
+            wbShirtLReceived: "",
+            wbShirtLSold: "",
+            wbShirtLClosing: "",
+            wbShirtXLReceived: "",
+            wbShirtXLSold: "",
+            wbShirtXLClosing: "",
+            wbShirt2XLReceived: "",
+            wbShirt2XLSold: "",
+            wbShirt2XLClosing: "",
+            wbShirt3XLReceived: "",
+            wbShirt3XLSold: "",
+            wbShirt3XLClosing: "",
+            wbShirt4XLReceived: "",
+            wbShirt4XLSold: "",
+            wbShirt4XLClosing: "",
         })
     }
 
@@ -3709,7 +3790,7 @@ export default function HopeFamilyStockTake(){
                                     Baptism Shirts
                                 </span>
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtKidsReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -3718,9 +3799,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtKidsReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtKidsSold'
                                     type="text"
                                     inputMode='numeric'
@@ -3729,9 +3810,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtKidsSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtKidsClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -3740,13 +3821,13 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtKidsClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
                             {/* XS */}
                             <div
                                 className={style.stockRow}
                             >
-                                {/* <input 
+                                <input 
                                     name='wbShirtXSReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -3755,9 +3836,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtXSReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtXSSold'
                                     type="text"
                                     inputMode='numeric'
@@ -3766,9 +3847,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtXSSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtXSClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -3777,13 +3858,13 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtXSClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
                             {/* S */}
                             <div
                                 className={style.stockRow}
                             >
-                                {/* <input 
+                                <input 
                                     name='wbShirtSReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -3792,9 +3873,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtSReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtSSold'
                                     type="text"
                                     inputMode='numeric'
@@ -3803,9 +3884,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtSSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtSClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -3814,13 +3895,13 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtSClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
                             {/* M */}
                             <div
                                 className={style.stockRow}
                             >
-                                {/* <input 
+                                <input 
                                     name='wbShirtMReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -3829,9 +3910,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtMReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtMSold'
                                     type="text"
                                     inputMode='numeric'
@@ -3840,9 +3921,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtMSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtMClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -3851,13 +3932,13 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtMClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
                             {/* L */}
                             <div
                                 className={style.stockRow}
                             >
-                                {/* <input 
+                                <input 
                                     name='wbShirtLReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -3866,9 +3947,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtLReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtLSold'
                                     type="text"
                                     inputMode='numeric'
@@ -3877,9 +3958,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtLSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtLClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -3888,13 +3969,13 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtLClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
                             {/* XL */}
                             <div
                                 className={style.stockRow}
                             >
-                                {/* <input 
+                                <input 
                                     name='wbShirtXLReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -3903,9 +3984,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtXLReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtXLSold'
                                     type="text"
                                     inputMode='numeric'
@@ -3914,9 +3995,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtXLSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirtXLClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -3925,13 +4006,13 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirtXLClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
                             {/* 2XL */}
                             <div
                                 className={style.stockRow}
                             >
-                                {/* <input 
+                                <input 
                                     name='wbShirt2XLReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -3940,9 +4021,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt2XLReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirt2XLSold'
                                     type="text"
                                     inputMode='numeric'
@@ -3951,9 +4032,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt2XLSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirt2XLClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -3962,13 +4043,13 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt2XLClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
                             {/* 3XL */}
                             <div
                                 className={style.stockRow}
                             >
-                                {/* <input 
+                                <input 
                                     name='wbShirt3XLReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -3977,9 +4058,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt3XLReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirt3XLSold'
                                     type="text"
                                     inputMode='numeric'
@@ -3988,9 +4069,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt3XLSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirt3XLClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -3999,13 +4080,13 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt3XLClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
                             {/* 4XL */}
                             <div
                                 className={style.stockRow}
                             >
-                                {/* <input 
+                                <input 
                                     name='wbShirt4XLReceived'
                                     type="text"
                                     inputMode='numeric'
@@ -4014,9 +4095,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt4XLReceived}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirt4XLSold'
                                     type="text"
                                     inputMode='numeric'
@@ -4025,9 +4106,9 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt4XLSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
 
-                                {/* <input 
+                                <input 
                                     name='wbShirt4XLClosing'
                                     type="text" 
                                     inputMode='numeric'
@@ -4036,7 +4117,7 @@ export default function HopeFamilyStockTake(){
                                     value={formData.wbShirt4XLClosing}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
-                                /> */}
+                                />
                             </div>
 
                             <textarea 
