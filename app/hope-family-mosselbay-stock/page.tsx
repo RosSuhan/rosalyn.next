@@ -69,6 +69,14 @@ type FormData = {
     pensClosingStock: string;
     lolipopsReceived: string;
     lolipopsClosingStock: string;
+    annointingOilReceived: string;
+    annointingOilClosingStock: string;
+    tissuesReceived: string,
+    tissuesClosingStock: string,
+    hallsReceived: string;
+    hallsClosingStock: string;
+    gumReceived: string;
+    gumClosingStock: string;
     service: ServiceSet; 
     welcomePackGiven: string;
     volunteersRightBlock: string;
@@ -191,8 +199,8 @@ type FormData = {
     riceCakeClosingStock: string,
     wetwipesReceived: string,
     wetwipesClosingStock: string,
-    tissuesReceived: string,
-    tissuesClosingStock: string,
+    kidsTissuesReceived: string,
+    kidsTissuesClosingStock: string,
     redBalloonReceived: string,
     redBalloonClosingStock: string,
     blueBalloonReceived: string,
@@ -297,6 +305,14 @@ export default function HopeFamilyStockTake(){
         pensClosingStock: "",
         lolipopsReceived: "",
         lolipopsClosingStock: "",
+        annointingOilReceived: "",
+        annointingOilClosingStock: "",
+        tissuesReceived: "",
+        tissuesClosingStock: "",
+        hallsReceived: "",
+        hallsClosingStock: "",
+        gumReceived: "",
+        gumClosingStock: "",
         service: "",
         welcomePackGiven: "",
         volunteersRightBlock: "",
@@ -418,8 +434,8 @@ export default function HopeFamilyStockTake(){
         riceCakeClosingStock: "",
         wetwipesReceived: "",
         wetwipesClosingStock: "",
-        tissuesReceived: "",
-        tissuesClosingStock: "",
+        kidsTissuesReceived: "",
+        kidsTissuesClosingStock: "",
         redBalloonReceived: "",
         redBalloonClosingStock: "",
         blueBalloonReceived: "",
@@ -554,6 +570,14 @@ export default function HopeFamilyStockTake(){
             pensClosingStock: "",
             lolipopsReceived: "",
             lolipopsClosingStock: "",
+            annointingOilReceived: "",
+            annointingOilClosingStock: "",
+            tissuesReceived: "",
+            tissuesClosingStock: "",
+            hallsReceived: "",
+            hallsClosingStock: "",
+            gumReceived: "",
+            gumClosingStock: "",
             service: "",
             welcomePackGiven: "",
             volunteersRightBlock: "",
@@ -676,8 +700,8 @@ export default function HopeFamilyStockTake(){
             riceCakeClosingStock: "",
             wetwipesReceived: "",
             wetwipesClosingStock: "",
-            tissuesReceived: "",
-            tissuesClosingStock: "",
+            kidsTissuesReceived: "",
+            kidsTissuesClosingStock: "",
             redBalloonReceived: "",
             redBalloonClosingStock: "",
             blueBalloonReceived: "",
@@ -1680,23 +1704,23 @@ export default function HopeFamilyStockTake(){
                                 </span>
 
                                 <input 
-                                    name='tissuesReceived'
+                                    name='kidsTissuesReceived'
                                     type="text"
                                     inputMode='numeric'
                                     pattern='[0-9]*'
                                     placeholder='Received'
-                                    value={formData.tissuesReceived}
+                                    value={formData.kidsTissuesReceived}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
 
                                 <input 
-                                    name='tissuesClosingStock'
+                                    name='kidsTissuesClosingStock'
                                     type="text"
                                     inputMode='numeric'
                                     pattern='[0-9]*'
                                     placeholder='Closing'
-                                    value={formData.tissuesClosingStock}
+                                    value={formData.kidsTissuesClosingStock}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
@@ -2039,6 +2063,106 @@ export default function HopeFamilyStockTake(){
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
+                            </div>
+
+                            {/* prayer boxes */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Prayer Boxes
+                                </span>
+
+                                <input 
+                                    name='annointingOilReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Annointing Oil Received'
+                                    value={formData.annointingOilReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='annointingOilClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Annointing Oil Closing'
+                                    value={formData.annointingOilClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='tissuesReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Tissues Received'
+                                    value={formData.tissuesReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='tissuesClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Tissues Closing'
+                                    value={formData.tissuesClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='hallsReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Halls Received'
+                                    value={formData.hallsReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='hallsClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Halls Closing'
+                                    value={formData.hallsClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='gumReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Gum Received'
+                                    value={formData.gumReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='gumClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Gum Closing'
+                                    value={formData.gumClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
                             </div>
 
                             {/* prayer request */}
