@@ -475,7 +475,7 @@ export default function HopeFamilyStockTake(){
         wbShirt4XLClosing: "",
     })
 
-    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbxUbfnx1vSmcYTmg01L3Lv1-27oZpKsel1TJiH6HmasU9sbHehMVDj20UnljV5OF8FSbw/exec'
+    const SUBMIT_GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbyL30MF8P4jDAvZmrsHQOIAI7OPz-Lpv1-GGbWwRjZ3PjZQSHKsOe1LueqOeeyEndqlVw/exec'
 
     async function handleSentForm (e:React.FormEvent) {
         e.preventDefault();
