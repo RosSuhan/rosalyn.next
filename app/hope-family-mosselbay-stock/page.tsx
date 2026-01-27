@@ -1861,14 +1861,14 @@ export default function HopeFamilyStockTake(){
                                 />
                             </div>
 
-                            {/* Air Freshner */}
+                            {/* 5L Air Freshner */}
                             <div
                                 className={style.stockRow}
                             >
                                 <span
                                     className={style.stockItem}
                                 >
-                                    Air Freshner
+                                    5L Air Freshner
                                 </span>
 
                                 <input 
