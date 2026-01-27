@@ -237,6 +237,12 @@ type FormData = {
     handSoapClosingStock: string,
     dishwashingLiquidReceived: string,
     dishwashingLiquidClosingStock: string,
+    vinegarReceived: string,
+    vinegarClosingStock: string,
+    allPurposeCleanerReceived: string,
+    allPurposeCleanerClosingStock: string,
+    germdeoReceived: string,
+    germdeoClosingStock: string,
     wbShirtKidsReceived: string,
     wbShirtKidsSold: string,
     wbShirtKidsClosing: string,
@@ -498,6 +504,12 @@ export default function HopeFamilyStockTake(){
         handSoapClosingStock: "",
         dishwashingLiquidReceived: "",
         dishwashingLiquidClosingStock: "",
+        vinegarReceived: "",
+        vinegarClosingStock: "",
+        allPurposeCleanerReceived: "",
+        allPurposeCleanerClosingStock: "",
+        germdeoReceived: "",
+        germdeoClosingStock: "",
         wbShirtKidsReceived: "",
         wbShirtKidsSold: "",
         wbShirtKidsClosing: "",
@@ -790,6 +802,12 @@ export default function HopeFamilyStockTake(){
             handSoapClosingStock: "",
             dishwashingLiquidReceived: "",
             dishwashingLiquidClosingStock: "",
+            vinegarReceived: "",
+            vinegarClosingStock: "",
+            allPurposeCleanerReceived: "",
+            allPurposeCleanerClosingStock: "",
+            germdeoReceived: "",
+            germdeoClosingStock: "",
             wbShirtKidsReceived: "",
             wbShirtKidsSold: "",
             wbShirtKidsClosing: "",
@@ -1909,7 +1927,7 @@ export default function HopeFamilyStockTake(){
                                 />
                             </div>
 
-                            {/* 5L Hand Soap */}
+                            {/* 5L Dishwashing Soap */}
                             <div
                                 className={style.stockRow}
                             >
@@ -1937,6 +1955,105 @@ export default function HopeFamilyStockTake(){
                                     pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.dishwashingLiquidClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* 5L Vinigar */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    5L Vinegar
+                                </span>
+
+                                <input 
+                                    name='vinegarReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.vinegarReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='vinegarClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.vinegarClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* 5L All Purpose Cleaner */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    5L All Purpose Cleaner 
+                                </span>
+
+                                <input 
+                                    name='allPurposeCleanerReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.allPurposeCleanerReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='allPurposeCleanerClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.allPurposeCleanerClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* 5L Germdeo */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    5L Germdeo
+                                </span>
+
+                                <input 
+                                    name='germdeoReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.germdeoReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='germdeoClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.germdeoClosingStock}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
