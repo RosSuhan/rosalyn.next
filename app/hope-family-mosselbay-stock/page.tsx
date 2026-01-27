@@ -9,6 +9,7 @@ type ServiceSet = "" | "firstService" | "secondService"
 // type Department = "Coffee"
 
 type FormData = {
+    comment: string,
     leader: string;
     department: Department;
     coffeeMade: string;
@@ -133,7 +134,6 @@ type FormData = {
     shTShirtReceived: string,
     shTShirtSold: string,
     shTShirtClosing: string,
-    comment: string,
     standardAnimalReceived: string,
     standardAnimalsSold: string,
     standardAnimalClosing: string,
@@ -211,6 +211,32 @@ type FormData = {
     orangeBalloonClosingStock: string,
     blackBagsReceived: string,
     blackBagsClosingStock: string,
+    smallToiletBinBagsReceived: string,
+    smallToiletBinBagsClosingStock: string,
+    toiletBlocksReceived: string,
+    toiletBlocksClosingStock: string,
+    latexGlovesReceived: string,
+    latexGlovesClosingStock: string,
+    dishSpongesReceived: string,
+    dishSpongesClosingStock: string,
+    dishClothReceived: string,
+    dishClothClosingStock: string,
+    dryingClothReceived: string,
+    dryingClothClosingStock: string,
+    kitchenPaperTowelsReceived: string,
+    kitchenPaperTowelsClosingStock: string,
+    handPaperTowelsReceived: string,
+    handPaperTowelsClosingStock: string,
+    toiletPaperReceived: string,
+    toiletPaperClosingStock: string,
+    autoAirFreshnerReceived: string,
+    autoAirFreshnerClosingStock: string,
+    airFreshnerReceived: string,
+    airFreshnerClosingStock: string,
+    handSoapReceived: string,
+    handSoapClosingStock: string,
+    dishwashingLiquidReceived: string,
+    dishwashingLiquidClosingStock: string,
     wbShirtKidsReceived: string,
     wbShirtKidsSold: string,
     wbShirtKidsClosing: string,
@@ -446,6 +472,32 @@ export default function HopeFamilyStockTake(){
         orangeBalloonClosingStock: "",   
         blackBagsReceived: "",
         blackBagsClosingStock: "", 
+        smallToiletBinBagsReceived: "",
+        smallToiletBinBagsClosingStock: "",
+        toiletBlocksReceived: "",
+        toiletBlocksClosingStock: "",
+        latexGlovesReceived: "",
+        latexGlovesClosingStock: "",
+        dishSpongesReceived: "",
+        dishSpongesClosingStock: "",
+        dishClothReceived: "",
+        dishClothClosingStock: "",
+        dryingClothReceived: "",
+        dryingClothClosingStock: "",
+        kitchenPaperTowelsReceived: "",
+        kitchenPaperTowelsClosingStock: "",
+        handPaperTowelsReceived: "",
+        handPaperTowelsClosingStock: "",
+        toiletPaperReceived: "",
+        toiletPaperClosingStock: "",
+        autoAirFreshnerReceived: "",
+        autoAirFreshnerClosingStock: "",
+        airFreshnerReceived: "",
+        airFreshnerClosingStock: "",
+        handSoapReceived: "",
+        handSoapClosingStock: "",
+        dishwashingLiquidReceived: "",
+        dishwashingLiquidClosingStock: "",
         wbShirtKidsReceived: "",
         wbShirtKidsSold: "",
         wbShirtKidsClosing: "",
@@ -711,7 +763,33 @@ export default function HopeFamilyStockTake(){
             orangeBalloonReceived: "",
             orangeBalloonClosingStock: "",
             blackBagsReceived: "",
-            blackBagsClosingStock: "",
+            blackBagsClosingStock: "",            
+            smallToiletBinBagsReceived: "",
+            smallToiletBinBagsClosingStock: "",
+            toiletBlocksReceived: "",
+            toiletBlocksClosingStock: "",
+            latexGlovesReceived: "",
+            latexGlovesClosingStock: "",
+            dishSpongesReceived: "",
+            dishSpongesClosingStock: "",
+            dishClothReceived: "",
+            dishClothClosingStock: "",
+            dryingClothReceived: "",
+            dryingClothClosingStock: "",
+            kitchenPaperTowelsReceived: "",
+            kitchenPaperTowelsClosingStock: "",
+            handPaperTowelsReceived: "",
+            handPaperTowelsClosingStock: "",
+            toiletPaperReceived: "",
+            toiletPaperClosingStock: "",
+            autoAirFreshnerReceived: "",
+            autoAirFreshnerClosingStock: "",
+            airFreshnerReceived: "",
+            airFreshnerClosingStock: "",
+            handSoapReceived: "",
+            handSoapClosingStock: "",
+            dishwashingLiquidReceived: "",
+            dishwashingLiquidClosingStock: "",
             wbShirtKidsReceived: "",
             wbShirtKidsSold: "",
             wbShirtKidsClosing: "",
@@ -1430,6 +1508,435 @@ export default function HopeFamilyStockTake(){
                                     pattern='[0-9]*'
                                     placeholder='Closing'
                                     value={formData.blackBagsClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Small Toilet Bin Bags */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Small Toilet Bin bags
+                                </span>
+
+                                <input 
+                                    name='smallToiletBinBagsReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.smallToiletBinBagsReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='smallToiletBinBagsClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.smallToiletBinBagsClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                             {/* Toilet Block Pack */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Toilet Block Pack
+                                </span>
+
+                                <input 
+                                    name='toiletBlocksReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.toiletBlocksReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='toiletBlocksClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.toiletBlocksClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* latex gloves */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Latex Gloves
+                                </span>
+
+                                <input 
+                                    name='latexGlovesReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.latexGlovesReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='latexGlovesClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.latexGlovesClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Dish Sponges */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Dish Sponges
+                                </span>
+
+                                <input 
+                                    name='dishSpongesReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.dishSpongesReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='dishSpongesClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.dishSpongesClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Drying Clothes */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Dish Clothes
+                                </span>
+
+                                <input 
+                                    name='dishClothReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.dishClothReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='dishClothClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.dishClothClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Drying Clothes */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Drying Clothes
+                                </span>
+
+                                <input 
+                                    name='dryingClothReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.dryingClothReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='dryingClothClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.dryingClothClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Kitchen Paper Towels */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Kitchen Paper Towels
+                                </span>
+
+                                <input 
+                                    name='kitchenPaperTowelsReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.kitchenPaperTowelsReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='kitchenPaperTowelsClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.kitchenPaperTowelsClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Hand Paper Towels */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Hand Paper Towels
+                                </span>
+
+                                <input 
+                                    name='handPaperTowelsReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.handPaperTowelsReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='handPaperTowelsClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.handPaperTowelsClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Toilet Paper */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Toilet Paper
+                                </span>
+
+                                <input 
+                                    name='toiletPaperReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.toiletPaperReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='toiletPaperClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.toiletPaperClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Automatic Air Freshner */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Automatic Air Freshner
+                                </span>
+
+                                <input 
+                                    name='autoAirFreshnerReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.autoAirFreshnerReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='autoAirFreshnerClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.autoAirFreshnerClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* Air Freshner */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    Air Freshner
+                                </span>
+
+                                <input 
+                                    name='airFreshnerReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.airFreshnerReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='airFreshnerClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.airFreshnerClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* 5L Hand Soap */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    5L Hand Soap
+                                </span>
+
+                                <input 
+                                    name='handSoapReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.handSoapReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='handSoapClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.handSoapClosingStock}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+                            </div>
+
+                            {/* 5L Hand Soap */}
+                            <div
+                                className={style.stockRow}
+                            >
+                                <span
+                                    className={style.stockItem}
+                                >
+                                    5L Dishwashing Liquid
+                                </span>
+
+                                <input 
+                                    name='dishwashingLiquidReceived'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Received'
+                                    value={formData.dishwashingLiquidReceived}
+                                    onChange={handleOnChange}
+                                    className={style.stockInput}
+                                />
+
+                                <input 
+                                    name='dishwashingLiquidClosingStock'
+                                    type="text"
+                                    inputMode='numeric'
+                                    pattern='[0-9]*'
+                                    placeholder='Closing'
+                                    value={formData.dishwashingLiquidClosingStock}
                                     onChange={handleOnChange}
                                     className={style.stockInput}
                                 />
