@@ -4169,7 +4169,7 @@ export default function HopeFamilyStockTake(){
                                     inputMode='numeric'
                                     pattern='[0-9]*'
                                     placeholder='Kids Sold'
-                                    value={formData.lanVolReceived}
+                                    value={formData.lanKidSold}
                                     onChange={handleOnChange}
                                     className={style.stockUsed}
                                 />
