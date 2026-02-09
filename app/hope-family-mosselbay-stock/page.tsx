@@ -960,9 +960,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='milkUsed'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Milk'
                                     value={formData.milkUsed}
                                     onChange={handleOnChange}
@@ -993,9 +995,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='coffeeClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.coffeeClosingStock}
                                     onChange={handleOnChange}
@@ -1026,9 +1030,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='decafCoffeeClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.decafCoffeeClosingStock}
                                     onChange={handleOnChange}
@@ -1158,9 +1164,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='hotChocolateClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.hotChocolateClosingStock}
                                     onChange={handleOnChange}
@@ -1191,9 +1199,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='youthHotChocolateClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.youthHotChocolateClosingStock}
                                     onChange={handleOnChange}
@@ -1224,9 +1234,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='wSugarClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.wSugarClosingStock}
                                     onChange={handleOnChange}
@@ -1257,9 +1269,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='bSugarClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.bSugarClosingStock}
                                     onChange={handleOnChange}
@@ -1290,9 +1304,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='sweetnerClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.sweetnerClosingStock}
                                     onChange={handleOnChange}
@@ -1523,9 +1539,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='blackBagsClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.blackBagsClosingStock}
                                     onChange={handleOnChange}
@@ -1556,9 +1574,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='smallToiletBinBagsClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.smallToiletBinBagsClosingStock}
                                     onChange={handleOnChange}
@@ -1622,9 +1642,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='latexGlovesClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.latexGlovesClosingStock}
                                     onChange={handleOnChange}
@@ -1853,9 +1875,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='autoAirFreshnerClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.autoAirFreshnerClosingStock}
                                     onChange={handleOnChange}
@@ -1886,9 +1910,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='airFreshnerClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.airFreshnerClosingStock}
                                     onChange={handleOnChange}
@@ -1919,9 +1945,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='handSoapClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.handSoapClosingStock}
                                     onChange={handleOnChange}
@@ -1952,9 +1980,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='dishwashingLiquidClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.dishwashingLiquidClosingStock}
                                     onChange={handleOnChange}
@@ -1985,9 +2015,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='vinegarClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.vinegarClosingStock}
                                     onChange={handleOnChange}
@@ -2018,9 +2050,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='allPurposeCleanerClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.allPurposeCleanerClosingStock}
                                     onChange={handleOnChange}
@@ -2051,9 +2085,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='germdeoClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Closing'
                                     value={formData.germdeoClosingStock}
                                     onChange={handleOnChange}
@@ -2758,9 +2794,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='hallsClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Halls Closing'
                                     value={formData.hallsClosingStock}
                                     onChange={handleOnChange}
@@ -2780,9 +2818,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='gumClosingStock'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Gum Closing'
                                     value={formData.gumClosingStock}
                                     onChange={handleOnChange}
