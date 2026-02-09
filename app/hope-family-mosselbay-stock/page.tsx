@@ -936,9 +936,11 @@ export default function HopeFamilyStockTake(){
 
                                 <input 
                                     name='coffeeMade'
-                                    type="text"
-                                    inputMode='numeric'
-                                    pattern='[0-9]*'
+                                    type="number"
+                                    step="0.5"
+                                    min="0"
+                                    inputMode='decimal'
+                                    pattern="^\d+(\.\d+)?$"
                                     placeholder='Coffee'
                                     value={formData.coffeeMade}
                                     onChange={handleOnChange}
