@@ -19,17 +19,17 @@ export default function Joline(){
     })
 
     const cuts = [
-        { label: "Man", value: "Man", price: 120 },
-        { label: "Kop & Baard", value: "KopBaard", price: 150 },
-        { label: "Vol Kop Skeer", value: "VolKopSkeer", price: 80 },
-        { label: "Bles Kop", value: "BlesKop", price: 70 },
-        { label: "Kind", value: "Kind", price: 90 },
-        { label: "Pensionaris", value: "Pensionaris", price: 90 }
+        { label: "Men's Cut", value: "Man", price: 120 },
+        { label: "Hair & Beard", value: "KopBaard", price: 150 },
+        { label: "Full Head Shave", value: "VolKopSkeer", price: 80 },
+        { label: "Half Head Shave", value: "BlesKop", price: 70 },
+        { label: "Kid's", value: "Kind", price: 90 },
+        { label: "Pensioners", value: "Pensionaris", price: 90 }
     ]
 
     const payments = [
-        { label: "Kontant", value: "Kontant" },
-        { label: "Kaart", value: "Kredit" }
+        { label: "Cash", value: "Kontant" },
+        { label: "Card", value: "Kredit" }
     ]
 
     const HAIRCUT_GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbzUfvhvKnxxn0PAWlkag8F98zeTdVK4pjxNCoqOd7esI4JDA7KMd53hkOC4O0B5PgSW3Q/exec'
@@ -108,7 +108,7 @@ export default function Joline(){
                                 className={style.radioCircle}
                                 value={cut.value}
                             />
-                            {cut.label}
+                            {`${cut.label} R${cut.price}`}
                         </label>
                     ))}
                 </div>
