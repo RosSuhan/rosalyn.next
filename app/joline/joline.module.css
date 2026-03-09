@@ -1,0 +1,84 @@
+.mainPage {
+    width: 100dvw;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3e3e3e;
+}
+
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dateRow {
+    width: 90%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem 0;
+}
+
+.cutButtonRow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+    padding: 3rem 0;
+}
+
+.payButtonRow {
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.submitButtonRow {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cutButton {
+    background: #ffffff;
+    color: #000000;
+    width: 45%;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    border: red solid 2px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.activeCutButton {
+    background: blue;
+    width: 45%;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    border: red solid 2px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.radioCircle {
+    display: none;
+}
+
+.submitButton {
+    padding: .5rem 0;
+    width: 250px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: solid red 2px;
+    border-radius: 10px;
+    background-color: blue;
+    color: red;
+}
