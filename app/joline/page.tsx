@@ -28,8 +28,8 @@ export default function Joline(){
     ]
 
     const payments = [
-        { label: "Cash", value: "Kontant" },
-        { label: "Card", value: "Kredit" }
+        { label: "Cash", value: "cash" },
+        { label: "Card", value: "card" }
     ]
 
     const HAIRCUT_GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbzUfvhvKnxxn0PAWlkag8F98zeTdVK4pjxNCoqOd7esI4JDA7KMd53hkOC4O0B5PgSW3Q/exec'
