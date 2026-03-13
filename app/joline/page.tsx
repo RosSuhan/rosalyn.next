@@ -19,12 +19,12 @@ export default function Joline(){
     })
 
     const cuts = [
-        { label: "Men's Cut", value: "Man", price: 120 },
-        { label: "Hair & Beard", value: "KopBaard", price: 150 },
-        { label: "Full Head Shave", value: "VolKopSkeer", price: 80 },
-        { label: "Half Head Shave", value: "BlesKop", price: 70 },
-        { label: "Kid's", value: "Kind", price: 90 },
-        { label: "Pensioners", value: "Pensionaris", price: 90 }
+        { label: "Men's Cut", value: "men-cut", price: 120 },
+        { label: "Hair & Beard", value: "hair-beard", price: 150 },
+        { label: "Full Head Shave", value: "full-head-shave", price: 80 },
+        { label: "Half Head Shave", value: "half-head-shave", price: 70 },
+        { label: "Kid's", value: "kid", price: 90 },
+        { label: "Pensioners", value: "pensioners", price: 90 }
     ]
 
     const payments = [
