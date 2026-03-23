@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Amsterdam-Four";
+    src: url(/css/fonts/AmsterdamFourFolder/Amsterdam-Four_ttf/Amsterdam-Four_ttf.ttf);
+}
+
+.mainPage {
+    width: 100dvw;
+    /* min-height: 100svh; */
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.pageTopBanner {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.pageBottomBanner {
+    position: absolute;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    bottom: 0;
+    z-index: 99;
+}
+
+.invitation {
+    width: 100%;
+    min-height: 100svh;
+    margin-top: -120px;
+    z-index: 0;
+    /* background-color: purple; */
+    /* overflow-y: scroll; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.page {
+    width: 100%;
+    height: 80svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+    /* row-gap: 2rem; */
+    /* background-color: pink; */
+}
+
+.weDo {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: -2rem;
+    /* background-color: green; */
+}
+
+.textBlock,
+.formBlock {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: purple; */
+}
+
+.formBlock {
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.mainText {
+    width: 100%;
+    text-align: center;
+    font-size: 2.986rem;
+    font-family: "Amsterdam-Four";
+    color: #544e39;
+    margin: 0;
+}
+
+.bigText {
+    width: 100%;
+    text-align: center;
+    font-size: 2.488rem;
+}
+
+.mediumText {
+    width: 100%;
+    text-align: center;
+    font-size: 1.44rem;
+}
+
+.smallText {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.heartRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.respondHeart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heart {
+    width: 40%;
+    height: auto;
+}
+
+.guestNumberRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formSmallText {
+    font-size: 1rem;
+}
+
+.guestNumber {
+    width: 20%;
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #eeeeee;
+    border: solid 2px #11291c;
+    color: #000000;
+}
+
+.inputFields {
+    width: 95%;
+    padding: .5rem;
+    font-size: 1rem;
+    background: #eeeeee;
+    color: #000000;
+    border: solid 2px #11291c;
+    border-radius: 5px;
+}
+
+.submitBtn {
+    background: #862047;
+    width: 60%;
+    padding: .5rem 0;
+    font-size: 1.44rem;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    border: solid 3px #11291c;
+    border-radius: 10px;
+    color: #ffffff;
+}
